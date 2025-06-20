@@ -1,6 +1,6 @@
 window.onload = function () {
 
-  const elegibles = ["rock", "paper", "scissors", "lizard", "spock"]
+  const elegibles = ["rock","paper","scissors","lizard","spock"]
 
 
   function generar() {
@@ -9,7 +9,7 @@ window.onload = function () {
     return generado
   }
 
-  const guest = prompt("rock", "paper", "scissors", "lizard", "spock")
+  const guest = prompt("Elige: rock, paper, scissors, lizard o spock", "rock").toLowerCase()
 
   let elegido = generar();
 
