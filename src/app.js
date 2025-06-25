@@ -4,48 +4,48 @@ window.onload = function () {
 
 
   function generar() {
-    let elegir = Math.floor(Math.random() * 5);
-    let generado = (elegibles[elegir]);
-    return generado
+    let numeroAleatorio = Math.floor(Math.random() * 5);
+    let opcionGenerada = (elegibles[numeroAleatorio]);
+    return opcionGenerada
   }
 
   const guest = prompt("Elige: rock, paper, scissors, lizard o spock", "rock").toLowerCase()
 
-  let elegido = generar();
+  let opcionElegida = generar();
 
-  if (guest == elegido) {
+  if (guest == opcionElegida) {
     console.log("empate")
   } else if (guest == "rock") {
-    if (elegido == "paper" || elegido == "spock") {
+    if (opcionElegida == "paper" || opcionElegida == "spock") {
       console.log("you are a loser")
-    } else if (elegido == "scissors" ||elegido == "Lizard") {
+    } else if (opcionElegida == "scissors" ||opcionElegida == "Lizard") {
       console.log("you are a winner")
     }
   } else if (guest == "paper") {
-    if (elegido == "scissors" || elegido == "lizard") {
+    if (opcionElegida == "scissors" || opcionElegida == "lizard") {
       console.log("you are a loser")
-    } else if (elegido == "rock" || elegido == "spock") {
+    } else if (opcionElegida == "rock" || opcionElegida == "spock") {
       console.log("you are a winner")
     }
 
   } else if (guest == "lizard") {
-    if (elegido == "scissors" || elegido == "rock") {
+    if (opcionElegida == "scissors" || opcionElegida == "rock") {
       console.log("you are a loser")
-    } else if (elegido == "paper" || elegido == "spock") {
+    } else if (opcionElegida == "paper" || opcionElegida == "spock") {
       console.log("you are a winner")
     }
 
   } else if (guest == "spock") {
-    if (elegido == "paper" || elegido == "lizard") {
+    if (opcionElegida == "paper" || opcionElegida == "lizard") {
       console.log("you are a loser")
-    } else if (elegido == "rock" || elegido == "scissors") {
+    } else if (opcionElegida == "rock" || opcionElegida == "scissors") {
       console.log("you are a winner")
     }
 
   }else if (guest == "scissors") {
-    if (elegido == "rock" || elegido == "spock") {
+    if (opcionElegida == "rock" || opcionElegida == "spock") {
       console.log("you are a loser")
-    } else if (elegido == "paper" || elegido == "lizard") {
+    } else if (opcionElegida == "paper" || opcionElegida == "lizard") {
       console.log("you are a winner")
     }
 
